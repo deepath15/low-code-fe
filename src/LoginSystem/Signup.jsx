@@ -15,7 +15,7 @@ const Signup = () => {
     const checkUser = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8080/api/auth/check-user",
+          "https://low-code-be.onrender.com:8080/api/auth/check-user",
           { withCredentials: true }
         );
         // console.log(res);
@@ -75,7 +75,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/auth/register",
+        "https://low-code-be.onrender.com:8080/api/auth/register",
         {
           username : username,
           email : email,

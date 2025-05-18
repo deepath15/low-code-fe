@@ -44,7 +44,7 @@ function GrapeApp() {
   const location = useLocation();
   const projectDetails = location.state;
   const projectID = projectDetails["_id"];
-  const projectEndpoint = `http://localhost:8080/api/project/save-project/${projectID}`;
+  const projectEndpoint = `https://low-code-be.onrender.com:8080/api/project/save-project/${projectID}`;
 
   useEffect(() => {
     const editor = grapesjs.init({
@@ -619,7 +619,7 @@ function GrapeApp() {
           .open();
 
         try {
-          const response = await fetch("http://localhost:5000/convert", {
+          const response = await fetch("https://low-code-server.deepath.tech:5000/convert", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -788,7 +788,7 @@ function GrapeApp() {
   //   const css = editor.getCss();
 
   //   try {
-  //     const response = await fetch("http://localhost:5000/convert", {
+  //     const response = await fetch("https://low-code-server.deepath.tech:5000/convert", {
   //       method: "POST",
   //       headers: {
   //         "Content-Type": "application/json",
