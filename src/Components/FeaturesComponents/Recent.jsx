@@ -46,7 +46,7 @@ const Recent = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "https://low-code-be.onrender.com:8080/api/project/all-projects",
+          "https://low-code-server.deepath.tech/api/project/all-projects",
           { withCredentials: true }
         );
 

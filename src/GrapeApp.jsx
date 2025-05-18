@@ -44,7 +44,7 @@ function GrapeApp() {
   const location = useLocation();
   const projectDetails = location.state;
   const projectID = projectDetails["_id"];
-  const projectEndpoint = `https://low-code-be.onrender.com:8080/api/project/save-project/${projectID}`;
+  const projectEndpoint = `https://low-code-server.deepath.tech/api/project/save-project/${projectID}`;
 
   useEffect(() => {
     const editor = grapesjs.init({

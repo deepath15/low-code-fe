@@ -7,7 +7,7 @@ const NavBar = () => {
   const logout = async () => {
     try {
       const response = await axios.post(
-        "https://low-code-be.onrender.com:8080/api/auth/logout",
+        "https://low-code-server.deepath.tech/api/auth/logout",
         {},
         { withCredentials: true }
       );

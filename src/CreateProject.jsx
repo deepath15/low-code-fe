@@ -14,7 +14,7 @@ const CreateProject = () => {
         return;
       }
       const res = await axios.post(
-        "https://low-code-be.onrender.com:8080/api/project/create-project",
+        "https://low-code-server.deepath.tech/api/project/create-project",
         {
           title: title,
         },

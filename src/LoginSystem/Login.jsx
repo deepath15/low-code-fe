@@ -11,7 +11,7 @@ const Login = () => {
     const checkUser = async () => {
       try {
         const res = await axios.get(
-          "https://low-code-be.onrender.com:8080/api/auth/check-user",
+          "https://low-code-server.deepath.tech/api/auth/check-user",
           { withCredentials: true }
         );
         console.log(res);
@@ -62,7 +62,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "https://low-code-be.onrender.com:8080/api/auth/login",
+        "https://low-code-server.deepath.tech/api/auth/login",
         {
           username,
           password,
