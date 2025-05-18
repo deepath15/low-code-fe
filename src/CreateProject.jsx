@@ -32,7 +32,7 @@ const CreateProject = () => {
       <div className="flex flex-col items-center justify-center w-[350px] h-[350px] border-amber-400 border-4 rounded-[9px] gap-4">
         <div className="w-80 text-center">
           <p className="text-xl border-b-1 w-full">
-            <span className="font-bold text-blue-600">Create New Project</span>
+            <span className="font-bold w-fit text-blue-600">Create New Project</span>
           </p>
         </div>
         <div className="w-[850px] text-center flex flex-col gap-3">
