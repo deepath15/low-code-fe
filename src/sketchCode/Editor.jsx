@@ -36,7 +36,7 @@ const Editor = ({
 
     try {
       const response = await axios.post(
-        "https://low-code-server.deepath.tech:8000/generate-code",
+        "https://low-code-ai.deepath.tech/generate-code",
         {
           image: dataUrl,
         }
